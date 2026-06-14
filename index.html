@@ -1,61 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>EduMentor AI</title>
 
 <link rel="stylesheet" href="style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
 
 <nav>
 
-<h2>EduMentor AI</h2>
+<h2>🎓 EduMentor AI</h2>
 
-<ul>
-
-<li><a href="#">Home</a></li>
-<li><a href="#features">Features</a></li>
-<li><a href="#about">About</a></li>
-
-</ul>
+<div>
+<a href="#assistant">Assistant</a>
+<a href="#features">Features</a>
+<a href="#about">About</a>
+</div>
 
 </nav>
 
 <section class="hero">
 
-<div class="hero-left">
+<div>
 
-<h1>
-Learn Smarter with AI
-</h1>
+<h1>AI Powered Study Assistant</h1>
 
 <p>
 
-EduMentor AI is an intelligent study assistant designed to support
-students with explanations, summaries, quizzes and academic guidance.
+Supporting <b>UN SDG 4 - Quality Education</b> by providing
+instant explanations, note summaries and quiz generation
+using Google Gemini AI.
 
 </p>
 
 <a href="#assistant">
-<button>
-Get Started
-</button>
+<button>Start Learning</button>
 </a>
-
-</div>
-
-<div class="hero-right">
-
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55d?w=700" alt="Students">
 
 </div>
 
@@ -68,29 +56,28 @@ Get Started
 <h2>Ask EduMentor AI</h2>
 
 <textarea
-placeholder="Ask anything about your studies..."
-id="prompt">
-</textarea>
+id="prompt"
+placeholder="Ask a question or paste your notes here..."></textarea>
 
 <div class="buttons">
 
-<button id="askBtn">
-Ask AI
-</button>
+<button id="askBtn">🤖 Ask AI</button>
 
-<button>
-Summarize
-</button>
+<button id="summaryBtn">📝 Summarize</button>
 
-<button>
-Generate Quiz
-</button>
+<button id="quizBtn">❓ Quiz</button>
+
+<button id="copyBtn">📋 Copy</button>
+
+<button id="downloadBtn">⬇ Download</button>
+
+<button id="clearBtn">🗑 Clear</button>
 
 </div>
 
 <div id="response">
 
-AI response will appear here.
+AI response will appear here...
 
 </div>
 
@@ -106,30 +93,48 @@ AI response will appear here.
 
 <div class="card">
 
-<h3>AI Tutor</h3>
+<h3>🤖 AI Tutor</h3>
 
 <p>
-Explains difficult concepts in simple language.
+
+Explains concepts in simple language.
+
 </p>
 
 </div>
 
 <div class="card">
 
-<h3>Notes Summarizer</h3>
+<h3>📝 Notes Summarizer</h3>
 
 <p>
-Converts lengthy notes into concise summaries.
+
+Turns lengthy notes into concise summaries.
+
 </p>
 
 </div>
 
 <div class="card">
 
-<h3>Quiz Generator</h3>
+<h3>❓ Quiz Generator</h3>
 
 <p>
-Creates practice quizzes for revision.
+
+Creates practice MCQs from any topic.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📚 Study Helper</h3>
+
+<p>
+
+Improves learning through personalized AI responses.
+
 </p>
 
 </div>
@@ -140,13 +145,14 @@ Creates practice quizzes for revision.
 
 <section id="about">
 
-<h2>About</h2>
+<h2>About This Project</h2>
 
 <p>
 
-EduMentor AI supports
-UN Sustainable Development Goal 4:
-Quality Education by providing accessible AI-powered learning assistance.
+EduMentor AI is an educational web application developed as
+part of a Web Development Capstone Project. It uses Google
+Gemini AI to assist students with learning, making quality
+education more accessible and interactive.
 
 </p>
 
@@ -154,10 +160,21 @@ Quality Education by providing accessible AI-powered learning assistance.
 
 <footer>
 
-Made with ❤️ using HTML CSS JavaScript
+<p>
+
+Made by <b>Harman Singh Kohli</b>
+
+</p>
+
+<p>
+
+HTML • CSS • JavaScript • Gemini AI
+
+</p>
 
 </footer>
 
+<script src="config.js"></script>
 <script src="script.js"></script>
 
 </body>
